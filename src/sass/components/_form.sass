@@ -1,0 +1,59 @@
+.form-control
+  display: block
+
+.search-input
+  width: 100%
+  margin-bottom: $spacing * 2
+  input
+    width: 100%
+    height: 40px
+    padding-left: 48px
+    border: 1px solid #B2B2B2
+    border-radius: $radius / 2
+    background: url('~@/assets/imgs/search.svg') left 12px center no-repeat $gray-alpha
+
+
+.switch-wrap
+  .switch
+    width: 47px
+    height: 21px
+    position: relative
+    display: inline-block
+
+    input 
+      opacity: 0
+      width: 0
+      height: 0
+      &:checked + .slider
+        background-color: $green
+
+      &:checked + .slider:before
+        transform: translateX(26px)
+
+  .slider
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #B2B2B2
+    transition: .4s
+    border-radius: 32px
+    cursor: pointer
+
+    &:before
+      content: ""
+      height: 15px
+      width: 15px
+      position: absolute
+      left: 3px
+      top: 3px
+      background-color: white
+      transition: .4s
+      border-radius: 50%
+
+
+  
+
+
+
